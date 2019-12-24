@@ -145,6 +145,10 @@ config TARGET_SMDK2410
 	bool "Support smdk2410"
 	select CPU_ARM920T
 
+config TARGET_SMDK2440
+	bool "Support smdk2440"
+	select CPU_ARM920T
+
 config TARGET_ASPENITE
 	bool "Support aspenite"
 	select CPU_ARM926EJS
@@ -1020,6 +1024,7 @@ source "board/vscom/baltos/Kconfig"
 source "board/woodburn/Kconfig"
 source "board/work-microwave/work_92105/Kconfig"
 source "board/zipitz2/Kconfig"
+source "board/samsung/smdk2440/Kconfig"
 
 source "arch/arm/Kconfig.debug"
 
